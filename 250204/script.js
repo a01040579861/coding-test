@@ -4,23 +4,23 @@
 // 예) 6,5,11의 세 숫자를 입력 받았다면, 5의 값이 콘솔창에 출력되어야 함
 
 // 1. 풀이 코드
-// function strNum(a, b, c) {
-//   let i = a;
+function strNum(a, b, c) {
+  let i = a;
 
-//   if (b < i) i = b;
-//   if (c < i) i = c;
+  if (b < i) i = b;
+  if (c < i) i = c;
 
-//   console.log(i);
-// }
+  console.log(i);
+}
 
-// strNum(6, 5, 10);
+strNum(6, 5, 10);
 
 // 2. 풀이 코드
-let a = parseInt(prompt("첫 번째 숫자 A를 입력하세요:"));
-let b = parseInt(prompt("두 번째 숫자 B를 입력하세요:"));
-let c = parseInt(prompt("세 번째 숫자 C를 입력하세요:"));
+let a = parseInt(prompt("첫 번째 숫자 a를 입력하세요:"));
+let b = parseInt(prompt("두 번째 숫자 b를 입력하세요:"));
+let c = parseInt(prompt("세 번째 숫자 c를 입력하세요:"));
 
-const smallest = Math.min(a, b, c);
+const numList = Math.min(a, b, c);
 
-console.log("가장 작은 값은: " + smallest);
-alert(`가장 작은 값은: ${smallest}`);
+console.log("가장 작은 값은: " + numList);
+alert(`가장 작은 값은: ${numList}`);
