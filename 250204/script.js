@@ -3,24 +3,11 @@
 // 문제 : 100이하의 자연수 A,B,C를 입력받아 세 수 중 가장 작은 값을 console창에 출력하는 코드를 작성하기
 // 예) 6,5,11의 세 숫자를 입력 받았다면, 5의 값이 콘솔창에 출력되어야 함
 
-// 1. 풀이 코드
+// 코딩테스트 문제1 풀이 코드
 function strNum(a, b, c) {
   let i = a;
-
   if (b < i) i = b;
   if (c < i) i = c;
-
   console.log(i);
 }
-
 strNum(6, 5, 10);
-
-// 2. 풀이 코드
-let a = parseInt(prompt("첫 번째 숫자 a를 입력하세요:"));
-let b = parseInt(prompt("두 번째 숫자 b를 입력하세요:"));
-let c = parseInt(prompt("세 번째 숫자 c를 입력하세요:"));
-
-const numList = Math.min(a, b, c);
-
-console.log("가장 작은 값은: " + numList);
-alert(`가장 작은 값은: ${numList}`);
